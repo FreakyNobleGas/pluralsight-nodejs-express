@@ -33,20 +33,25 @@ Tooling
 Templating Engines with EJS
     - Uses the syntax '<% JAVASCRIPT + HTML %>' for dynamic code
     - Example HTML
-<html>
-    <body>
-        <h1>
-            <!-- Look for dynamic code -->
-            Welcome to <%=title%>
-        </h1>
-        <ul>
-            <!-- Loops through Map Array -->
-            <% data.map((i) => {
-                %><li>
-                    <%=i%>
-                </li><%
-            })
-            %>
-        </ul>
-    </body>
-</html>
+        <html>
+            <body>
+                <h1>
+                    <!-- Look for dynamic code -->
+                    Welcome to <%=title%>
+                </h1>
+                <ul>
+                    <!-- Loops through Map Array -->
+                    <% data.map((i) => {
+                        %><li>
+                            <%=i%>
+                        </li><%
+                    })
+                    %>
+                </ul>
+            </body>
+        </html>
+    
+Creating a Router
+    Allows you to dynamically create routes for pages such as for multiple IDs
+    Defined in sessionsRouter.js
+    Difference between res.get and res.render, render allows you to pull ejs file instead of static html
