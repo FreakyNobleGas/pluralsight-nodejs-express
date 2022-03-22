@@ -1,5 +1,6 @@
 // Set up Express
 const express = require('express')
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // Setup debugging tool
@@ -22,7 +23,7 @@ app.get('/', (req, res)=>{
 })
 
 // Bind app to port
-app.listen(3000, ()=> {
+app.listen(PORT, ()=> {
     // Template String. Debug is used in place of console.log, which only runs in debug mode!
-    debug(`listening on port ${chalk.green('3000')}`);
+    debug(`listening to port ${chalk.green(PORT)}`);
 })

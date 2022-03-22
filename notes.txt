@@ -23,4 +23,9 @@ Debug Packages:
     chalk - Adds color to logging
     debug - Only runs console logs when debug is set
         Run Command: 'DEBUG=* node app.js' (Run in BASH!)
-    morgan - logs information about web traffic. Considered 'middleware'
+    morgan - logs information about web traffic. Considered 'middleware' 
+
+Tooling
+    npm scripts in package.json
+        To run debug script, run 'npm run debug'
+    nodemon - Automatically restarts web server on code change
