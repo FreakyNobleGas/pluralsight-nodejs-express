@@ -29,3 +29,24 @@ Tooling
     npm scripts in package.json
         To run debug script, run 'npm run debug'
     nodemon - Automatically restarts web server on code change
+
+Templating Engines with EJS
+    - Uses the syntax '<% JAVASCRIPT + HTML %>' for dynamic code
+    - Example HTML
+<html>
+    <body>
+        <h1>
+            <!-- Look for dynamic code -->
+            Welcome to <%=title%>
+        </h1>
+        <ul>
+            <!-- Loops through Map Array -->
+            <% data.map((i) => {
+                %><li>
+                    <%=i%>
+                </li><%
+            })
+            %>
+        </ul>
+    </body>
+</html>

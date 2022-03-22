@@ -13,14 +13,19 @@ app.use(morgan('tiny'))
 
 // Serve static HTML files in the public function. This function call explicitly looks for
 // a file called 'index.html'.
-const path = require('path'); 
+const path = require('path');
 app.use(express.static(path.join(__dirname, '/public/')));
+
+// Setup view engine with ejs
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
 
 // Everything works through app in express
 // Setup routing
 app.get('/', (req, res)=>{
-    res.send('Hello from my app');
-})
+    // Pass variable to ejs and render website
+    res.render('index', { title: 'Globomantics', data: ['a', 'b', 'c'] });
+});
 
 // Bind app to port
 app.listen(PORT, ()=> {
