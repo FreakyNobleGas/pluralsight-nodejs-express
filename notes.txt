@@ -4,11 +4,23 @@ Notes
 What is Node.js?
     Server Side JavaScript
     Cross Platform
+    Use NVM-Windows for changing node versions
 
 What is express?
     Web Dev Framework
     Ideal for tiny lightweight API
 
-Setting up project with NPM:
+Setting up project with NPM and Express:
     npm init
     npm install express (Install a specific version with 'express@x.x.x')
+    create app.js file
+
+Running Project:
+    node app.js
+    http://localhost:3000/
+
+Debug Packages:
+    chalk - Adds color to logging
+    debug - Only runs console logs when debug is set
+        Run Command: 'DEBUG=* node app.js' (Run in BASH!)
+    morgan - logs information about web traffic. Considered 'middleware'
