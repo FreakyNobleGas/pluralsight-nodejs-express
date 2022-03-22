@@ -1,0 +1,14 @@
+Notes
+-----
+
+What is Node.js?
+    Server Side JavaScript
+    Cross Platform
+
+What is express?
+    Web Dev Framework
+    Ideal for tiny lightweight API
+
+Setting up project with NPM:
+    npm init
+    npm install express (Install a specific version with 'express@x.x.x')
